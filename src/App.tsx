@@ -3,7 +3,7 @@ import AppLayout from "./ui/AppLayout";
 import HomePage from "./pages/HomePage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import PageDetail from "./pages/PageDetail";
+import PageDetail from "./pages/Page";
 
 export default function App() {
   return (
