@@ -1,0 +1,52 @@
+{
+  "pages": [
+    {
+      "id": 1,
+      "widgets": [
+        {
+          "widgetName": "Widget 1 ",
+          "widgetTitle": "Widget 1 title",
+          "directiveName": "directive 1",
+          "x": 10,
+          "y": 10,
+          "minX": 10,
+          "minY": 10,
+          "maxX": 10,
+          "maxY": 10
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "widgets": [
+        {
+          "widgetName": "Widget 2 ",
+          "widgetTitle": "Widget 2 title",
+          "directiveName": "directive 2",
+          "x": 10,
+          "y": 10,
+          "minX": 10,
+          "minY": 10,
+          "maxX": 10,
+          "maxY": 10
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "widgets": [
+        {
+          "widgetName": "Widget 3 ",
+          "widgetTitle": "Widget 3 title",
+          "directiveName": "directive 3",
+          "x": 10,
+          "y": 10,
+          "minX": 10,
+          "minY": 10,
+          "maxX": 10,
+          "maxY": 10
+        }
+      ]
+    }
+  ]
+}
