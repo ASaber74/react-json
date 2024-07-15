@@ -22,7 +22,7 @@ export default function SideNav() {
     <>
       <Navbar
         bg="light"
-        className="d-none d-lg-block flex-column vh-100 text-center shadow pt-1"
+        className="d-none d-md-block flex-column vh-100 text-center shadow pt-1"
       >
         <div className="border-bottom w-100 text-center">
           <Link to="home" className="reset-link">
@@ -36,7 +36,7 @@ export default function SideNav() {
         </Nav>
       </Navbar>
 
-      <Navbar bg="light" expand="lg" className="d-lg-none shadow pt-1">
+      <Navbar bg="light" expand="md" className="d-md-none shadow pt-1">
         <Container>
           <Navbar.Brand as={Link} to="home" className="reset-link">
             <h4 className="mb-4 mt-3">Sidebar</h4>
