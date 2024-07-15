@@ -4,7 +4,7 @@
       "id": 1,
       "widgets": [
         {
-          "widgetName": "Widget 1 ",
+          "widgetName": "Widget 1",
           "widgetTitle": "Widget 1 title",
           "directiveName": "directive 1",
           "x": 10,
@@ -37,9 +37,9 @@
           "maxY": 10
         },
         {
-          "widgetName": "Widget 3 ",
-          "widgetTitle": "Widget 3 title",
-          "directiveName": "directive 3",
+          "widgetName": "Widget 4 ",
+          "widgetTitle": "Widget 4 title",
+          "directiveName": "directive 4",
           "x": 10,
           "y": 10,
           "minX": 10,
@@ -53,9 +53,9 @@
       "id": 2,
       "widgets": [
         {
-          "widgetName": "Widget 1 ",
-          "widgetTitle": "Widget 1 title",
-          "directiveName": "directive 1",
+          "widgetName": "Widget 5 ",
+          "widgetTitle": "Widget 5 title",
+          "directiveName": "directive 5",
           "x": 10,
           "y": 10,
           "minX": 10,
@@ -64,9 +64,9 @@
           "maxY": 10
         },
         {
-          "widgetName": "Widget 2 ",
-          "widgetTitle": "Widget 2 title",
-          "directiveName": "directive 2",
+          "widgetName": "Widget 6 ",
+          "widgetTitle": "Widget 6 title",
+          "directiveName": "directive 6",
           "x": 10,
           "y": 10,
           "minX": 10,
@@ -75,9 +75,9 @@
           "maxY": 10
         },
         {
-          "widgetName": "Widget 3 ",
-          "widgetTitle": "Widget 3 title",
-          "directiveName": "directive 3",
+          "widgetName": "Widget 7 ",
+          "widgetTitle": "Widget 7 title",
+          "directiveName": "directive 7",
           "x": 10,
           "y": 10,
           "minX": 10,
@@ -86,9 +86,9 @@
           "maxY": 10
         },
         {
-          "widgetName": "Widget 3 ",
-          "widgetTitle": "Widget 3 title",
-          "directiveName": "directive 3",
+          "widgetName": "Widget 8 ",
+          "widgetTitle": "Widget 8 title",
+          "directiveName": "directive 8",
           "x": 10,
           "y": 10,
           "minX": 10,
@@ -102,9 +102,9 @@
       "id": 3,
       "widgets": [
         {
-          "widgetName": "Widget 1 ",
-          "widgetTitle": "Widget 1 title",
-          "directiveName": "directive 1",
+          "widgetName": "Widget 9 ",
+          "widgetTitle": "Widget 9 title",
+          "directiveName": "directive 9",
           "x": 10,
           "y": 10,
           "minX": 10,
@@ -113,9 +113,9 @@
           "maxY": 10
         },
         {
-          "widgetName": "Widget 2 ",
-          "widgetTitle": "Widget 2 title",
-          "directiveName": "directive 2",
+          "widgetName": "Widget 10 ",
+          "widgetTitle": "Widget 10 title",
+          "directiveName": "directive 10",
           "x": 10,
           "y": 10,
           "minX": 10,
@@ -124,9 +124,9 @@
           "maxY": 10
         },
         {
-          "widgetName": "Widget 3 ",
-          "widgetTitle": "Widget 3 title",
-          "directiveName": "directive 3",
+          "widgetName": "Widget 11 ",
+          "widgetTitle": "Widget 11 title",
+          "directiveName": "directive 11",
           "x": 10,
           "y": 10,
           "minX": 10,
@@ -135,9 +135,9 @@
           "maxY": 10
         },
         {
-          "widgetName": "Widget 3 ",
-          "widgetTitle": "Widget 3 title",
-          "directiveName": "directive 3",
+          "widgetName": "Widget 12 ",
+          "widgetTitle": "Widget 12 title",
+          "directiveName": "directive 12",
           "x": 10,
           "y": 10,
           "minX": 10,
