@@ -7,12 +7,7 @@ export const useMenuData = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("../menu.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
+    fetch("../menu.json")
       .then((response) => response.json())
       .then((data) => {
         setMenuData(data.page);

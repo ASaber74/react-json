@@ -7,12 +7,7 @@ export function usePagesData() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("../pages.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
+    fetch("../pages.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
