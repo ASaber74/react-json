@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useMenuData } from "../hooks/useMenuData";
 import { usePagesData } from "../hooks/usePagesData";
-import PageDetail from "./PageDetail"; // Import the new Page component
+import PageDetail from "./PageDetail";
 
 export default function Page() {
   const { id } = useParams<{ id: string }>();
