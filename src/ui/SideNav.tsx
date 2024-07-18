@@ -1,13 +1,14 @@
 import { useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import "../App.css";
-import { useMenuData } from "../hooks/useMenuData";
 import { Menu } from "../types/types";
 import NavLinks from "./NavLinks";
 import { Link } from "react-router-dom";
+import { useMenuContext } from "../context/MenuContext";
 
 export default function SideNav() {
-  const { menuData, loading, error } = useMenuData();
+  // const { menuData, loading, error } = useMenuData();
+  const { menuData, loading, error } = useMenuContext();
   const [expanded, setExpanded] = useState(false);
 
   if (loading) {

@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import { useMenuData } from "../hooks/useMenuData";
 import { usePagesData } from "../hooks/usePagesData";
 import PageDetail from "./PageDetail";
+import { useMenuContext } from "../context/MenuContext";
 
 export default function Page() {
   const { id } = useParams<{ id: string }>();
@@ -10,7 +10,7 @@ export default function Page() {
     loading: loadingPages,
     error: pagesError,
   } = usePagesData();
-  const { menuData, loading: loadingMenu, error: menuError } = useMenuData();
+  const { menuData, loading: loadingMenu, error: menuError } = useMenuContext();
 
   if (loadingMenu || loadingPages) {
     return <div>Loading...</div>;

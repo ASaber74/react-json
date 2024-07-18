@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Page } from "../types/types";
 
 export function usePagesData() {
@@ -6,22 +6,30 @@ export function usePagesData() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const effectRan = useRef(false);
+
   useEffect(() => {
-    fetch("../pages.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => {
-        setPagesData(data.pages);
-        setLoading(false);
-      })
-      .catch((error) => {
-        setError(error.message);
-        setLoading(false);
-      });
+    if (effectRan.current === false) {
+      fetch("../pages.json")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.json();
+        })
+        .then((data) => {
+          setPagesData(data.pages);
+          setLoading(false);
+        })
+        .catch((error) => {
+          setError(error.message);
+          setLoading(false);
+        });
+    }
+
+    return () => {
+      effectRan.current = true;
+    };
   }, []);
 
   return { pagesData, loading, error };
