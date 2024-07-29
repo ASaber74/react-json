@@ -1,4 +1,3 @@
-// PageWidget.tsx
 import { Widget } from "../types/types";
 
 interface PageWidgetProps {
