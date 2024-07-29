@@ -5,4 +5,5 @@ export default function HomePage() {
       <h3 className="text-center">Page Title</h3>
     </div>
   )
+
 }

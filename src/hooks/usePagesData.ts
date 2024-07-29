@@ -10,26 +10,31 @@ export function usePagesData() {
 
   useEffect(() => {
     if (effectRan.current === false) {
-      fetch("../pages.json")
-        .then((response) => {
+      const fetchData = async () => {
+        try {
+          const response = await fetch("../pages.json");
           if (!response.ok) {
             throw new Error("Network response was not ok");
           }
-          return response.json();
-        })
-        .then((data) => {
+          const data = await response.json();
           setPagesData(data.pages);
           setLoading(false);
-        })
-        .catch((error) => {
-          setError(error.message);
+        } catch (err) {
+          if (err instanceof Error) {
+            setError(err.message);
+          } else {
+            setError("An unknown error occurred");
+          }
           setLoading(false);
-        });
-    }
+        }
+      };
 
-    return () => {
-      effectRan.current = true;
-    };
+      fetchData();
+
+      return () => {
+        effectRan.current = true;
+      };
+    }
   }, []);
 
   return { pagesData, loading, error };

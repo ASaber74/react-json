@@ -23,7 +23,7 @@ export default function SideNav() {
     <>
       <Navbar
         bg="light"
-        className="d-none d-md-block flex-column vh-100 text-center shadow pt-1"
+        className="d-none d-md-block flex-column vh-100 text-center shadow pt-1 "
       >
         <div className="border-bottom w-100 text-center">
           <Link to="home" className="reset-link">

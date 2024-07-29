@@ -1,4 +1,5 @@
-import React, {
+/* eslint-disable react-refresh/only-export-components */
+import {
   createContext,
   useContext,
   useState,
@@ -25,17 +26,25 @@ export const MenuProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     if (effectRan.current === false) {
-      fetch("../menu.json")
-        .then((response) => response.json())
-        .then((data) => {
+      const fetchMenuData = async () => {
+        try {
+          const response = await fetch("../menu.json");
+          if (!response.ok) {
+            throw new Error("Failed to fetch menu data");
+          }
+          const data = await response.json();
           setMenuData(data.page);
           setLoading(false);
-        })
-        .catch((err) => {
-          setError(err.message);
+        } catch (err) {
+          if (err instanceof Error) {
+            setError(err.message);
+          } else {
+            setError("An unknown error occurred");
+          }
           setLoading(false);
-          ``;
-        });
+        }
+      };
+      fetchMenuData();
     }
 
     return () => {
@@ -65,3 +74,4 @@ export const useMenuContext = () => {
   }
   return context;
 };
+

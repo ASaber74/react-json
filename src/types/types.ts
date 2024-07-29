@@ -8,6 +8,8 @@ export interface Widget {
   minY: number;
   maxX: number;
   maxY: number;
+  row: number;
+  col: number;
 }
 
 export interface Page {
