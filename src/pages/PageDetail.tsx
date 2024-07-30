@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import PageWidget from "../ui/PageWidget";
 import { Responsive, WidthProvider } from "react-grid-layout";
@@ -14,6 +14,16 @@ interface PageProps {
 
 export default function PageDetail({ widgets = [], isComposable }: PageProps) {
   const [currentWidgets, setCurrentWidgets] = useState<Widget[]>(widgets);
+  const [isRtl, setIsRtl] = useState<boolean>(false);
+  
+  useEffect(() => {
+    const bodyDir = document.body.getAttribute('dir');
+    if (bodyDir === 'rtl') {
+      setIsRtl(true);
+    }
+  }, []);
+  
+  
 
   const handleDeleteWidget = (widgetName: string) => {
     setCurrentWidgets((prevWidgets) =>
@@ -50,9 +60,10 @@ export default function PageDetail({ widgets = [], isComposable }: PageProps) {
         rowHeight={rowHeight}
         width={width}
         draggableHandle=".widget-title"
-        resizeHandles={["se", "ne", "sw"]}
+        resizeHandles={[`${isRtl ? "sw" : "se"}`]}
         isResizable={isComposable}
         isDraggable={isComposable}
+        
       >
         {currentWidgets.map((widget) => (
           <div

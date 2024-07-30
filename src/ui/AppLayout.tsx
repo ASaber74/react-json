@@ -6,7 +6,7 @@ export default function AppLayout() {
   return (
     <Container fluid>
       <Row>
-        <Col md={2} className="p-0 ">
+        <Col md={2} className="vh-100 p-0 ">
           <SideNav />
         </Col>
         <Col md={10} className="p-0 pt-3">

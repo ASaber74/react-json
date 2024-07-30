@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import { useMenuContext } from "../context/MenuContext";
 
 export default function SideNav() {
-  // const { menuData, loading, error } = useMenuData();
   const { menuData, loading, error } = useMenuContext();
   const [expanded, setExpanded] = useState(false);
 
